@@ -1,0 +1,32 @@
+{
+  "name": "@everystate/css",
+  "version": "1.0.0",
+  "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "everystate",
+    "state-driven-css",
+    "design-tokens",
+    "typed-css",
+    "relational-css",
+    "css-custom-properties",
+    "reactive-styles",
+    "theming",
+    "design-system",
+    "runtime-css",
+    "zero-build"
+  ],
+  "author": {
+    "name": "Ajdin Imsirovic",
+    "url": "https://www.linkedin.com/in/ajdin-imsirovic"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ImsirovicAjdin/everystate-css"
+  },
+  "dependencies": {
+    "@uistate/css": "^2.0.1"
+  }
+}
