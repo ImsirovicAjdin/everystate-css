@@ -13,10 +13,10 @@ npm install @everystate/css @everystate/core
 ## Quick Start
 
 ```js
-import { createEventState } from '@everystate/core';
+import { createEveryState } from '@everystate/core';
 import { createStyleEngine } from '@everystate/css';
 
-const store = createEventState({
+const store = createEveryState({
   theme: {
     primary: '#3b82f6',
     secondary: '#8b5cf6'

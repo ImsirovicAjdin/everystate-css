@@ -4,6 +4,7 @@
   "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "everystate",
     "state-driven-css",
@@ -26,7 +27,19 @@
     "type": "git",
     "url": "https://github.com/ImsirovicAjdin/everystate-css"
   },
-  "dependencies": {
-    "@uistate/css": "^2.0.1"
-  }
+  "homepage": "https://github.com/ImsirovicAjdin/everystate-css#readme",
+  "scripts": {
+    "test": "node self-test.js"
+  },
+  "files": [
+    "index.js",
+    "cssState.js",
+    "designSystem.js",
+    "relationalCSS.js",
+    "stateSerializer.js",
+    "styleEngine.js",
+    "templateManager.js",
+    "typedCSS.js",
+    "README.md"
+  ]
 }
