@@ -1,6 +1,6 @@
 {
   "name": "@everystate/css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
   "type": "module",
   "main": "index.js",
