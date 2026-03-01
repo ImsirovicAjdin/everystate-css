@@ -1,6 +1,6 @@
 {
   "name": "@everystate/css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
   "type": "module",
   "main": "index.js",
@@ -32,14 +32,10 @@
     "test": "node self-test.js"
   },
   "files": [
-    "index.js",
-    "cssState.js",
-    "designSystem.js",
-    "relationalCSS.js",
-    "stateSerializer.js",
-    "styleEngine.js",
-    "templateManager.js",
-    "typedCSS.js",
-    "README.md"
+    "*.js",
+    "*.d.ts",
+    "*.md",
+    "*.html",
+    "tests/"
   ]
 }
