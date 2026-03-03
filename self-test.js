@@ -261,7 +261,7 @@ assert('formatLength rounds', formatLength(1.33333333, 'rem') === '1.3333rem');
 
 // -- Summary ---------------------------------------------------------
 
-console.log(`\n@everystate/css v1.0.0 self-test`);
+console.log(`\n@everystate/css v1.0.4 self-test`);
 if (failed > 0) {
   console.error(`✗ ${failed} assertion(s) failed, ${passed} passed`);
   process.exit(1);

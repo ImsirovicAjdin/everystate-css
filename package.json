@@ -1,10 +1,13 @@
 {
   "name": "@everystate/css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
+  "bin": {
+    "everystate-css-self-test": "cli.js"
+  },
   "keywords": [
     "everystate",
     "state-driven-css",
@@ -29,13 +32,17 @@
   },
   "homepage": "https://github.com/ImsirovicAjdin/everystate-css#readme",
   "scripts": {
-    "test": "node self-test.js"
+    "test": "node self-test.js",
+    "self-test": "node self-test.js",
+    "test:integration": "node tests/css.test.js",
+    "test:i": "node tests/css.test.js"
   },
   "files": [
     "*.js",
     "*.d.ts",
     "*.md",
     "*.html",
+    "cli.js",
     "tests/"
   ]
 }
