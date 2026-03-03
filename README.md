@@ -1,4 +1,4 @@
-# @everystate/css
+# @everystate/css v1.0.4
 
 **State-driven CSS: Reactive styling, design tokens, and relational constraints**
 
