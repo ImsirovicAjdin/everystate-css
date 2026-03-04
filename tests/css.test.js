@@ -10,13 +10,14 @@
  * cssState and styleEngine require DOM and are covered by browser tests.
  */
 
-import { createEveryTest, runTests } from '@everystate/test';
+import { createEventTest, runTests } from '@everystate/test';
 import { createEveryState } from '@everystate/core';
 import { createDesignSystem } from '@everystate/css/designSystem';
 import { createTypedCSS } from '@everystate/css/typedCSS';
 import { createRelationalCSS } from '@everystate/css/relationalCSS';
 
-const results = runTests({
+const test = createEventTest();
+const results = runTests(test, {
 
   // == designSystem ==================================================
 
