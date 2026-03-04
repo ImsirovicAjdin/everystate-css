@@ -1,4 +1,4 @@
-# @everystate/css v1.0.6
+# @everystate/css v1.0.7
 
 **State-driven CSS: Reactive styling, design tokens, and relational constraints**
 
@@ -9,6 +9,8 @@ Make your styles reactive. Design tokens, theme variables, and CSS constraints l
 ```bash
 npm install @everystate/css @everystate/core
 ```
+
+> **Zero external dependencies** - `@everystate/css` only depends on `@everystate/core` (same namespace) for core functionality. For its integration tests that come with the lib and you can run anytime, it uses `@everystate/test` (also the same namespace). No third-party packages required.
 
 ## Quick Start
 
@@ -79,20 +81,17 @@ npm --prefix node_modules/@everystate/css run self-test
 ### Integration tests (@everystate/test)
 
 The `tests/` folder contains a separate integration suite that uses
-`@everystate/test` (not zero-dep). This is an intentional tradeoff:
-the **self-test** stays lightweight, while integration tests remain available
-for deeper validation.
+`@everystate/test` and `@everystate/core` (declared as `devDependencies`).
+This is an intentional tradeoff: the **self-test** stays lightweight,
+while integration tests remain available for deeper validation.
 
-Run the integration suite (opt-in):
-
-```bash
-npm install @everystate/test
-node node_modules/@everystate/css/tests/css.test.js
-```
-
-Short form (from the package folder):
+**For end users** (after installing the package):
 
 ```bash
+# Install test dependencies
+npm install @everystate/test @everystate/core
+
+# Run from package folder
 cd node_modules/@everystate/css
 npm run test:integration
 # or short alias
@@ -103,6 +102,18 @@ Or, from your project root:
 
 ```bash
 npm --prefix node_modules/@everystate/css run test:integration
+# or short alias
+npm --prefix node_modules/@everystate/css run test:i
+```
+
+**For package developers** (working in the source repo):
+
+```bash
+# Install dev dependencies first
+npm install
+
+# Run integration tests
+npm run test:integration
 ```
 
 ## License
