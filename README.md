@@ -1,4 +1,4 @@
-# @everystate/css v1.0.4
+# @everystate/css v1.0.6
 
 **State-driven CSS: Reactive styling, design tokens, and relational constraints**
 
@@ -53,6 +53,57 @@ store.set('theme.primary', '#ef4444');
 | [@everystate/router](https://www.npmjs.com/package/@everystate/router) | SPA routing as state | MIT |
 | [@everystate/test](https://www.npmjs.com/package/@everystate/test) | Event-sequence testing for UIstate stores. Zero dependency. | Proprietary |
 | [@everystate/view](https://www.npmjs.com/package/@everystate/view) | State-driven view: DOMless resolve + surgical DOM projector. View tree as first-class state | MIT |
+
+## Self-test (CLI, opt-in)
+
+Run the bundled **zero-dependency** self-test locally to verify CSS behavior.
+It is **opt-in** and never runs automatically on install:
+
+```bash
+# via npx (no install needed)
+npx everystate-css-self-test
+
+# if installed locally
+everystate-css-self-test
+
+# or directly
+node node_modules/@everystate/css/self-test.js
+```
+
+You can also run the npm script from the package folder:
+
+```bash
+npm --prefix node_modules/@everystate/css run self-test
+```
+
+### Integration tests (@everystate/test)
+
+The `tests/` folder contains a separate integration suite that uses
+`@everystate/test` (not zero-dep). This is an intentional tradeoff:
+the **self-test** stays lightweight, while integration tests remain available
+for deeper validation.
+
+Run the integration suite (opt-in):
+
+```bash
+npm install @everystate/test
+node node_modules/@everystate/css/tests/css.test.js
+```
+
+Short form (from the package folder):
+
+```bash
+cd node_modules/@everystate/css
+npm run test:integration
+# or short alias
+npm run test:i
+```
+
+Or, from your project root:
+
+```bash
+npm --prefix node_modules/@everystate/css run test:integration
+```
 
 ## License
 
