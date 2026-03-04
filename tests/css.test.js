@@ -16,8 +16,7 @@ import { createDesignSystem } from '@everystate/css/designSystem';
 import { createTypedCSS } from '@everystate/css/typedCSS';
 import { createRelationalCSS } from '@everystate/css/relationalCSS';
 
-const test = createEventTest();
-const results = runTests(test, {
+const results = runTests({
 
   // == designSystem ==================================================
 
