@@ -1,6 +1,6 @@
 {
   "name": "@everystate/css",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "EveryState CSS: State-driven CSS with runtime reactive styling, design tokens, typed validation, and relational constraints",
   "type": "module",
   "main": "index.js",
@@ -48,5 +48,32 @@
   "devDependencies": {
     "@everystate/core": "^1.0.0",
     "@everystate/test": "^1.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./designSystem": {
+      "import": "./designSystem.js"
+    },
+    "./typedCSS": {
+      "import": "./typedCSS.js"
+    },
+    "./relationalCSS": {
+      "import": "./relationalCSS.js"
+    },
+    "./cssState": {
+      "import": "./cssState.js"
+    },
+    "./styleEngine": {
+      "import": "./styleEngine.js"
+    },
+    "./templateManager": {
+      "import": "./templateManager.js"
+    },
+    "./stateSerializer": {
+      "import": "./stateSerializer.js"
+    }
   }
 }
